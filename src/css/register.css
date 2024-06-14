@@ -1,0 +1,28 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+}
+
+.container {
+    max-width: 400px;
+}
+
+.card {
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#register-form .form-control {
+    margin-bottom: 15px;
+}
+
+.btn-primary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#loading {
+    margin-right: 10px;
+}

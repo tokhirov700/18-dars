@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/profile.css">
+</head>
+<body>
+    <div class="d-flex">
+        <nav id="sidebar" class="bg-light border-end">
+            <div class="p-4">
+                <h3>Menu</h3>
+                <ul class="list-unstyled">
+                    <li><a href="#">Dashboard</a></li>
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="#">Settings</a></li>
+                    <li><a href="#">Logout</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div id="content" class="p-4">
+            <h1 class="mb-4">User Profile</h1>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title" id="username">Username: Loading...</h5>
+                    <p class="card-text" id="email">Email: Loading...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="myToastElement" class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <img width="20" height="20" id="toast-image" src="..." class="rounded me-2" alt="...">
+                <strong id="toast-title" class="me-auto">Bootstrap</strong>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div id="toast-message" class="toast-body">
+                Hello, world! This is a toast message.
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="../scripts/profile.js"></script>
+</body>
+</html>
